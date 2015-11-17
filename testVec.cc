@@ -33,7 +33,7 @@ void Test1()
     }
   // Print out results
   cout << "Test1 results" << endl;
-  
+
   for (size_t i = 0; i < v.Size(); ++i)
     {
       cout << v[i] << endl;
@@ -62,7 +62,7 @@ void Test2()
     }
   // Print out results
   cout << "Test2 results" << endl;
-  
+
   while (!v.Empty())
     {
       String st = v.Back();
@@ -92,7 +92,7 @@ void Test3()
     }
   // Print out results
   cout << "Test3 results" << endl;
-  
+
   while (!v.Empty())
     {
       String st = v.Front();
@@ -119,7 +119,7 @@ void Test4()
     }
   // Now make a copy of the vector
   Vector<String> v1(v);
-  
+
   // Print out results
   cout << "Test4 results" << endl;
   for (size_t i = 0; i < v1.Size(); ++i)
@@ -185,7 +185,7 @@ void Test6()
     }
 }
 
-  
+
 #ifdef GRAD_STUDENT
 void Test7()
 { // Test insert and erase (grad students only)
@@ -243,6 +243,7 @@ void Test8()
     }
   // Also test reserve
   Vector<String> v1;
+  //cout << "Apple" << endl;
   v1.Reserve(10);
     for (int i = 0; i < 50; ++i)
     {
@@ -253,7 +254,7 @@ void Test8()
     // No need t print out; the constructor counts will verify correctness
 }
 #endif
-  
+
 
 int main(int argc, char** argv)
 { // If second arg specified, it is the test number to run
